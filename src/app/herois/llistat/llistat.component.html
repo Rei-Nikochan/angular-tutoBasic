@@ -1,0 +1,18 @@
+<p>Llistat d'herois</p>
+<!--  ?No caldria condició.("" null, undefinded..) la condició no es cumleix // else // noBorrat es referència local - ng-template #noborrat-->
+<div *ngIf ="heroiMort; else noBorrat">  
+    <h3>Heroi eliminat: <small> {{ heroiMort }} </small></h3>
+    
+</div>
+
+<ng-template #noBorrat><h3>Tots vius</h3></ng-template>
+
+<br>
+
+<button (click)="borrarHeroi()">Borrar</button>
+
+<ul>
+    <li *ngFor="let heroi of herois; let i = index">
+        {{ i + 1}} - {{ heroi }}
+    </li>
+</ul>

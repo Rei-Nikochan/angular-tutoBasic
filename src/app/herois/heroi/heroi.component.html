@@ -1,0 +1,19 @@
+<h1>Heroi Treballa</h1>
+
+<dl>
+    <td>Nom:</td>
+    <dd> {{nom}} </dd>
+
+    <td>Edat:</td>
+    <dd> {{ edat }}</dd>
+
+    <td>Funció:</td>
+    <dd> {{ obtenirNom() }}</dd>
+
+    <td>Majúscules</td>
+    <dd> {{ nomMajuscules }}</dd>
+</dl>
+
+<button (click)="cambiarNom()">Cambiar Heroi</button>
+<button (click)="cambiarEdat()">Cambiar Edat</button>
+
